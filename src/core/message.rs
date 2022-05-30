@@ -18,9 +18,9 @@ pub(crate) trait WriteBytes {
 /// [`Message::NoteOff`] messages.
 #[derive(Clone, Copy, Debug, Default, Eq, PartialEq, Ord, PartialOrd, Hash)]
 pub struct NoteMessage {
-    pub(crate) channel: Channel,
-    pub(crate) note_number: NoteNumber,
-    pub(crate) velocity: Velocity,
+    pub channel: Channel,
+    pub note_number: NoteNumber,
+    pub velocity: Velocity,
 }
 
 impl NoteMessage {
